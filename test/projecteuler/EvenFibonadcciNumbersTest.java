@@ -1,6 +1,10 @@
 package projecteuler;
 
-import static org.junit.Assert.*;
+/**
+ * Unit test for EvenFibonacciNumbers.java file
+ * 
+ * @author Rosh Lee
+ */
 
 import org.junit.Before;
 import org.junit.Test;
@@ -13,10 +17,17 @@ public class EvenFibonadcciNumbersTest {
 
 	}
 
-	@Test
-	public void test() {
-
-		fail("Not yet implemented");
+	/**
+	 * Unit test to check if 'evenFibonacciNumberSum' throws an exception
+	 * properly
+	 */
+	@Test(expected=IllegalArgumentException.class)
+	public void testEvenFibonacciNumberSumIllegalArgumentException() {
+		EvenFibonacciNumbers evenFib = new EvenFibonacciNumbers();
+		int target = 0;
+		evenFib.evenFibonacciNumberSum(target);
+		target = -3;
+		evenFib.evenFibonacciNumberSum(target);
 	}
-
+	
 }
