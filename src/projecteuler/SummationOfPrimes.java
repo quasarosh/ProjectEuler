@@ -9,7 +9,6 @@ package projecteuler;
  * Find the sum of all the primes below two million.
  * 
  * Answer: 142913828922
- * Execution Time: 527 milliseconds
  * 
  * Solution: 
  * Iterate the numbers between 2 and target-1 number, and accumulate all the prime numbers
@@ -19,8 +18,10 @@ package projecteuler;
  * 
  * Ref: https://en.wikipedia.org/wiki/Prime_number  
  * 
+ * Sample output: 
+ * Sum: 142913828922
+ * Execution Time: 1847 milliseconds
  * Reason to Pick: After solving the Largest Prime Factor problem, I tried to solve prime number related issue. 
- * 
  * Time to spend: 
  * - Solve a question: 10 minutes
  * - Etc (Commenting, testing, restructuring, etc): 30 miniutes     
@@ -73,7 +74,7 @@ public class SummationOfPrimes {
 		long sum = summation.summationOfPrimes(TARGET);
 		long endTime = System.currentTimeMillis();
 		System.out.println("Sum: " +sum);
-		System.out.println("Excution Time: " + (endTime - startTime) + " millisecones");
+		System.out.println("Execution Time: " + (endTime - startTime) + " milliseconds");
 
 	}
 

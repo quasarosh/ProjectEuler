@@ -9,7 +9,6 @@ package projecteuler;
  * What is the largest prime factor of the number 600851475143 ?
  * 
  * Answer: 6857
- * Execution Time: 0 milliseconds
  * 
  * Solution: 
  * Iterate the numbers between 2 and target-1 number, find if there is a prime number,  
@@ -21,9 +20,11 @@ package projecteuler;
  * 
  * Ref: https://en.wikipedia.org/wiki/Prime_number  
  *   
- *   
- * Reason to Pick: This problem was pretty interested, specifically the large size of a target number. 
- * 
+ * Sample output:
+ * Largest Prime Factor: 6857
+ * Execution Time: 0 milliseconds
+   
+ * Reason to Pick: This problem was pretty interested, specifically the large size of a target number.  
  * Time to spend: 
  * - Solve a question: 20 minutes
  * - Etc (Commenting, testing, restructuring, etc): about a hour
@@ -76,8 +77,8 @@ public class LargestPrimeFactor {
 		long startTime = System.currentTimeMillis();
 		long res = largestPrime.findLargestPrimeFactor(TARGET);
 		long endTime = System.currentTimeMillis();
-		System.out.println("Excution Time: " + (endTime - startTime) + " millisecones");
 		System.out.println("Largest Prime Factor: " + res);	
+		System.out.println("Execution Time: " + (endTime - startTime) + " milliseconds");
 		
 	}
 

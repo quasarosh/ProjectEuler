@@ -9,7 +9,6 @@ package projecteuler;
  *Find the sum of all the multiples of 3 or 5 below 1000.
  * 
  * Answer: 233168
- * Execution Time: 0 milliseconds
  * 
  * Solution: 
  * Iterate the numbers which are less than a given target number, and calculate 
@@ -19,9 +18,11 @@ package projecteuler;
  * Time Complexity: O(n) or O(n*m)
  * n: 0 < n < target
  * m: List of given number
- *   
+ *     
+ * Sample output: 
+ * Sum is 233168
+ * Execution Time: 0 milliseconds  
  * Reason to Pick: First item of ProjectEuler web site and want to get familiar with the problems in this web site. 
- * 
  * Time to spend: 
  * - Solve a question: 10 - 20 minutes
  * - Etc (Commenting, testing, restructuring, etc): more than a hour
@@ -114,8 +115,8 @@ public class MultipliesSum {
 		long startTime = System.currentTimeMillis();
 		int result = getMultipliesSum(nums, 1000);
 		long endTime = System.currentTimeMillis();
-		System.out.println("Excution Time: " + (endTime - startTime) + " millisecones");
 		System.out.println("Sum is " + result);
+		System.out.println("Execution Time: " + (endTime - startTime) + " milliseconds");
 		
 	}
 

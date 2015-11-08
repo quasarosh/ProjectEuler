@@ -9,7 +9,6 @@ package projecteuler;
  * What is the 10 001st prime number?
  * 
  * Answer: 104743
- * Execution Time: 0 milliseconds
  * 
  * Solution: 
  * Iterate the numbers between 2 and target-1 number, find 10001st or nst prime number.
@@ -20,8 +19,10 @@ package projecteuler;
  * 
  * Ref: https://en.wikipedia.org/wiki/Prime_number  
  *   
+ * Sample output:
+ * nth prime: 104743
+ * Execution Time: 0 milliseconds
  * Reason to Pick: After solving the Largest Prime Factor problem, I tried to solve prime number related issue. 
- * 
  * Time to spend: 
  * - Solve a question: 10 minutes
  * - Etc (Commenting, testing, restructuring, etc): 30 miniutes  
@@ -84,8 +85,8 @@ public class NstPrime {
 		long startTime = System.currentTimeMillis();
 		long endTime = System.currentTimeMillis();
 		int nthPrime = nstPrime.findNstPrime(TARGET);
-		System.out.println("Excution Time: " + (endTime - startTime) + " millisecones");
 		System.out.println("nth prime: " + nthPrime);
+		System.out.println("Execution Time: " + (endTime - startTime) + " milliseconds");
 
 	}
 

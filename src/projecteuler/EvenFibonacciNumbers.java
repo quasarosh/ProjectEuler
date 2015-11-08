@@ -10,7 +10,6 @@ package projecteuler;
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  * 
  * Answer: 4613732
- * Execution Time: 1 milliseconds
  * 
  * Solution: 
  * Using Fibonacci number formula (f(n) = f(n-1) + f(n-2)), get a Fibonacci number which is smaller than a given target and a sum of all
@@ -20,7 +19,10 @@ package projecteuler;
  * Time Complexity: O(n)
  * 
  * Ref: https://en.wikipedia.org/wiki/Fibonacci_number  
- *   
+ * 
+ * Sample output:   
+ * Sum of Even Fibonacci Numbers: 4613732
+ * Execution Time: 1 milliseconds   
  * Reason to Pick: To get more familiar with the problems in this web site.   
  *   
  * Time to spend: 
@@ -61,8 +63,8 @@ public class EvenFibonacciNumbers {
 		long startTime = System.currentTimeMillis();
 		int res = fibNums.evenFibonacciNumberSum(TARGET);
 		long endTime = System.currentTimeMillis();
-		System.out.println("Execution Time: " + (endTime - startTime) + " millisecones");
 		System.out.println("Sum of Even Fibonacci Numbers: " + res);
+		System.out.println("Execution Time: " + (endTime - startTime) + " milliseconds");
 
 	}
 
