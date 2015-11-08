@@ -1,5 +1,11 @@
 package projecteuler.enums;
 
+/**
+ * NumberType.java which contains enum value of number type, odd, even, or both. 
+ *  
+ * @author Rosh Lee
+ *
+ */
 
 public enum NumberType {
 
@@ -17,12 +23,15 @@ public enum NumberType {
 		return value;
 	}
 
-	public static NumberType fromString(String value) {
-		if (value != null) {
-			for (NumberType numberType : values()) {
-				if (value.equals(numberType.value)) {
-					return numberType;
-				}
+	/**
+	 * This method is used to get NumberType enum value using integers among 0, 1, or 2 assigned above. 
+	 * @param value
+	 * @return
+	 */
+	public static NumberType fromInteger(int value) {
+		for (NumberType numberType : values()) {
+			if (value == numberType.value) {
+				return numberType;
 			}
 		}
 		return null;
