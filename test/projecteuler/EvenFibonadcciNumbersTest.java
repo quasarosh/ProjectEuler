@@ -1,4 +1,4 @@
-package rosh.projecteuler;
+package projecteuler;
 
 import static org.junit.Assert.*;
 

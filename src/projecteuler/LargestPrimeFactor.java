@@ -1,4 +1,4 @@
-package rosh.projecteuler;
+package projecteuler;
 
 // http://planetmath.org/howtofindwhetheragivennumberisprimeornot
 public class LargestPrimeFactor {

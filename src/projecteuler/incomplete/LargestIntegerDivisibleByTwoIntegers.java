@@ -1,4 +1,4 @@
-package rosh.projecteuler.incomplete;
+package projecteuler.incomplete;
 
 import java.util.ArrayList;
 import java.util.List;

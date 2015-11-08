@@ -1,4 +1,4 @@
-package rosh.projecteuler.incomplete;
+package projecteuler.incomplete;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;

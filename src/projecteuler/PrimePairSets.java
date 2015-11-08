@@ -1,4 +1,4 @@
-package rosh.projecteuler;
+package projecteuler;
 
 import java.util.ArrayList;
 import java.util.HashSet;

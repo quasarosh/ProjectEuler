@@ -1,4 +1,4 @@
-package rosh.projecteuler;
+package projecteuler;
 
 
 public class EvenFibonacciNumbers {

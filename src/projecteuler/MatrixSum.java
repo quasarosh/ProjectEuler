@@ -1,4 +1,4 @@
-package rosh.projecteuler;
+package projecteuler;
 
 import java.util.HashMap;
 import java.util.Map;
